@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Roboto&family=Tilt+Warp&display=swap');
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3;
+    color: #221F1F;
+    background-color: #F8F5F3;
+    font-size: 16px;
+    margin: 0;
+    padding-left: 264px;
+}
+
+header {
+    font-size: 1.7rem;
+    font-family: 'Tilt Warp', cursive;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #221F1F;
+    width: 264px;
+    height: 100%;
+    padding-top: 1rem;
+}
+
+nav header {
+    text-align: center;
+    font-size: 1.06rem;
+    color: #F8F5F3;
+}
+
+#ul-navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: #F8F5F3;
+    line-height: 1.3;
+    font-family: 'Jost', sans-serif;
+}
+
+.nav-link:hover {
+    background-color: #363638;
+}
+
+#ul-navbar {
+    list-style-type: none;
+}
+
+#main-doc {
+    width: 100%;
+    padding: 1rem;
+}
+
+code {
+    background-color: #221F1F;
+    color: #F8F5F3;
+    display: block;
+    text-align: left;
+    padding: 1rem;
+    margin: 0.8rem;
+    border-radius: 5px;
+    width: 70%;
+}
+
+@media only screen and (max-width: 760px) {
+    body {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    #navbar {
+        position: relative;
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+
+    #main-doc {
+        text-align: justify;
+    }
+
+    code {
+        width: 94%;
+    }
+}
